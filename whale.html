@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8"/>	
+		<title>Flying Whale Game</title>
+	</head>
+
+	<body>
+		
+		<div id="left">
+			<h2>飞翔的鲸鱼</h2>
+			<button id="start" >start game</button>
+			<canvas id="score_board" width="800" height="80"></canvas>
+			<canvas id="canvas" width="800" height="480"></canvas>
+		</div>
+		<div id="right">
+		<p>
+<pre>
+<strong>游戏信息</strong>
+开发者：	廖鹏锐 10通软2班
+语言：		HTML5
+测试运行平台：	Firefox3.5+，Chrome（暂不支持IE9）
+开发系统平台：  Windows7
+
+<strong>游戏规则:</strong>
+1.按“start game”（或者space键、enter键）初始化游戏，
+  再次按开始游戏；
+2.控制鲸鱼，有体力值跟空气，按紧鼠标左键/键盘Up键往上游；
+3.体力靠吃鱼类补充，碰撞到章鱼、乌贼则损伤体力；
+4.空气靠浮动到水面补充；
+5.体力或者空气一方为0则游戏结束；
+6.吃金币累计分数，游戏结束显示距离、分数；
+7.空气不足、体力不足时，鲸鱼眼睛会有变化，
+ 进度条也有颜色变化，以提醒玩家。
+
+<strong>游戏不足：</strong>
+1.界面还没有加入设计；
+2.游戏未加入音乐、音效；
+3.首次加载完毕后，按空格键开始会有鲸鱼消失的bug
+ （游戏结束后重新按则正常，未找到解决方法）。
+</pre>
+		</p>
+		</div>
+		<style type="text/css">
+			button,canvas{display: block;}
+			canvas { border: 1px solid red;}
+			h2 {text-align: center; margin-bottom: -50px;}
+			div{float:left;  display: inline-block; margin: 20px;}
+			#right{width: 450px; padding-top: 100px;}
+			button{ width: 100px; height: 50px; position: relative; top:70px; left: 630px;}
+		</style>
+		
+		<script>window.mit = window.mit || {};</script>
+		<script src="common.js" type="text/javascript"/></script>
+		<script src="background.js" type="text/javascript"/></script>
+		<script src="sprites.js" type="text/javascript"/></script>
+		<script src="whale.js" type="text/javascript"/></script>
+		<script src="enermy.js" type="text/javascript"/></script>
+		<script src="game.js" type="text/javascript"/></script>
+	
+	</body>
+</html>
